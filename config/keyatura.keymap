@@ -26,7 +26,7 @@
       key-positions = <6 7 8>;
       bindings = <&to BASE>;
     };
-    фDelete {
+    Delete {
       bindings = <&kp DELETE>;
       key-positions = <8 9>;
     };
