@@ -26,6 +26,10 @@
       key-positions = <6 7 8>;
       bindings = <&to BASE>;
     };
+    фDelete {
+      bindings = <&kp DELETE>;
+      key-positions = <8 9>;
+    };
     combo_normalleft {
       key-positions = <1 2 3>;
       bindings = <&to BASE>;
