@@ -64,12 +64,12 @@
 
     greatt {
         bindings = <&kp LC(LA(P))>;
-        key-positions = <5 6>;
+        key-positions = <25 26>;
     };
 
     ParaRight {
         bindings = <&kp LS(N0)>;
-        key-positions = <25 26>;
+        key-positions = <5 6>;
     };
 
     bootloaderRight {
