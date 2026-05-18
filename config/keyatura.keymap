@@ -62,15 +62,15 @@
         key-positions = <23 24>;
     };
 
-    greatt {
-        bindings = <&kp LC(LA(P))>;
-        key-positions = <25 26>;
-    };
+        greatt {
+            bindings = <&kp LC(LA(P))>;
+            key-positions = <25 26>;
+        };
 
-    ParaRight {
-        bindings = <&kp LS(N0)>;
-        key-positions = <5 6>;
-    };
+        circumflex {
+            bindings = <&kp LS(N6)>;
+            key-positions = <5 6>;
+        };
 
     bootloaderRight {
         bindings = <&bootloader>;
