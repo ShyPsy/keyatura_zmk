@@ -147,9 +147,8 @@
             // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤Bse├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                    &kp NUBS       &kp Z         &kp X         &kp C         &kp V             &kp N         &kp M       &kp COMMA     &lt 8 DOT      &kp FSLH
             // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤ 0 ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
-                                            &mt LWIN ESC &mt LCTRL BSPC &mt LSHFT DEL       &lt 6 RET   &lt NAV SPACE   &lt 5 ESC 
+                                            &mt LSHFT ESC    &kp BSPC   &mt LCTRL DEL       &lt 6 RET   &lt NAV SPACE   &lt 5 ESC 
             //                             ╰─────────────┴─────────────┴─────────────╯Bse╰─────────────┴─────────────┴─────────────╯
-
             >;
     };
 
@@ -203,11 +202,11 @@
             display-name = "Navigation";
             bindings = <
             // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮Nav╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-                    &trans        &trans       &kp HOME      &kp END        &kp F            &kp ESC      &kp PG_UP       &kp UP      &kp PG_DN      &kp F11
+                   &kp RBKT       &kp N9        &kp N8        &kp N7       &kp LBKT          &kp ESC      &kp PG_UP       &kp UP      &kp PG_DN      &kp F11
             // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ 4 ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                  &kp LWIN      &kp LALT      &kp LSHFT     &kp LCTRL     &kp PSCRN          &kp RET      &kp LEFT      &kp DOWN      &kp RIGHT     &kp LCTRL
+                 &kp KP_MINUS     &kp N6        &kp N5        &kp N4     &kp KP_PLUS         &kp RET      &kp LEFT      &kp DOWN      &kp RIGHT     &kp LCTRL
             // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤Nav├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                  &kp LC(Z)     &kp LC(X)     &kp LC(Y)     &kp LC(C)     &kp LC(V)          &kp TAB    &kp C_VOL_DN  &kp C_VOL_UP  &kp LA(LC(DOT)) &kp LCTRL
+                 &kp KP_SLASH     &kp N3        &kp N2        &kp N1   &kp KP_MULTIPLY       &kp TAB    &kp C_VOL_DN  &kp C_VOL_UP  &kp LA(LC(DOT)) &kp LCTRL
             // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤ 4 ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
                                               &kp LSHFT    &kp LC(BSPC)   &kp LCTRL          &kp RET      &kp SPACE       &trans
             //                             ╰─────────────┴─────────────┴─────────────╯Nav╰─────────────┴─────────────┴─────────────╯
