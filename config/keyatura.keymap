@@ -25,10 +25,12 @@
     bootloaderRight {
         bindings = <&bootloader>;
         key-positions = <9 18 27>;
+        layers = <0>;   // действует только на слое 0
     };
     bootloaderLeft {
         bindings = <&bootloader>;
         key-positions = <0 11 22>;
+        layers = <0>;   // действует только на слое 0
     };
 
     combo_normal {
@@ -38,6 +40,7 @@
     combo_normalleft {
         key-positions = <1 2 3>;
         bindings = <&to BASE>;
+        layers = <3 4 5 6>;   // действует только на слое 3 4 5 6
     };
     game {
         bindings = <&tog 1>;
@@ -50,6 +53,7 @@
     combo_fn {
         key-positions = <27 28>;
         bindings = <&sl FN>;
+        layers = <0 2 3 4 5 6>;   // действует только на слое 0 2 3 4 5 6
     };
     GoNav {
         bindings = <&tog 4>;
@@ -64,54 +68,56 @@
     Delete {
         bindings = <&kp DELETE>;
         key-positions = <8 9>;
+        layers = <0 2 3 4 5 6>;   // действует только на слое 0 2 3 4 5 6
     };
     Delete2 {
         bindings = <&kp DELETE>;
         key-positions = <7 8>;
+        layers = <0 2 3 4 5 6>;   // действует только на слое 0 2 3 4 5 6
     };
-
 
     screenshot {
         bindings = <&kp LG(LS(S))>;
         key-positions = <3 4>;
+        layers = <0 2 3 4 5 6>;   // действует только на слое 0 2 3 4 5 6
     };
 
     eng {
         bindings = <&kp F16>;
         key-positions = <13 14>;
+        layers = <0 2 3 4 5 6>;   // действует только на слое 0 2 3 4 5 6
     };
     rus {
         bindings = <&kp F17>;
         key-positions = <15 16>;
+        layers = <0 2 3 4 5 6>;   // действует только на слое 0 2 3 4 5 6
     };
 
     ParaLeft {
         bindings = <&kp LS(N9)>;
         key-positions = <23 24>;
+        layers = <0 2 3 4 5 6>;   // действует только на слое 0 2 3 4 5 6
     };
     greatt {
         bindings = <&kp LC(LA(P))>;
         key-positions = <25 26>;
+        layers = <0 2 3 4 5 6>;   // действует только на слое 0 2 3 4 5 6
     };
     circumflex {
         bindings = <&kp LS(N6)>;
         key-positions = <5 6>;
+        layers = <0 2 3 4 5 6>;   // действует только на слое 0 2 3 4 5 6
     };
-
-   
-
-
-        
-
-
 
     fullscrenRight {
         bindings = <&kp F11>;
         key-positions = <6 15>;
+        layers = <0 2 3 4 5 6>;   // действует только на слое 0 2 3 4 5 6
     };
     fullscreenLeft {
         bindings = <&kp F11>;
         key-positions = <3 14>;
+        layers = <0 2 3 4 5 6>;   // действует только на слое 0 2 3 4 5 6
         };
     };
 
