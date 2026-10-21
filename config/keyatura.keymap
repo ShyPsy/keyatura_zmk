@@ -41,7 +41,7 @@
     combo_normalleft {
         key-positions = <1 2 3>;
         bindings = <&to BASE>;
-        layers = <0 1 2 3>;
+        layers = <0 1 2>;
     };
     game {
         bindings = <&tog GAME>;
@@ -54,7 +54,7 @@
     combo_SRV {
         key-positions = <27 28>;
         bindings = <&sl SRV>;
-        layers = <0 1 2 3>;
+        layers = <0 1 2>;
     };
     GoNav {
         bindings = <&tog NAV>;
@@ -62,62 +62,62 @@
     };
     GoPPN {
         bindings = <&tog PPN>;
-        key-positions = <0 1 2 3>;
+        key-positions = <0 1 2>;
     };
 
     Delete {
         bindings = <&kp DELETE>;
         key-positions = <8 9>;
-        layers = <0 1 2 3>;
+        layers = <0 1 2>;
     };
     Delete2 {
         bindings = <&kp DELETE>;
         key-positions = <7 8>;
-        layers = <0 1 2 3>;
+        layers = <0 1 2>;
     };
 
     screenshot {
         bindings = <&kp LG(LS(S))>;
         key-positions = <3 4>;
-        layers = <0 1 2 3>;
+        layers = <0 1 2>;
     };
 
     eng {
         bindings = <&kp F16>;
         key-positions = <13 14>;
-        layers = <0 1 2 3>;
+        layers = <0 1 2>;
     };
     rus {
         bindings = <&kp F17>;
         key-positions = <15 16>;
-        layers = <0 1 2 3>;
+        layers = <0 1 2>;
     };
 
     ParaLeft {
         bindings = <&kp LS(N9)>;
         key-positions = <23 24>;
-        layers = <0 1 2 3>;
+        layers = <0 1 2>;
     };
     greatt {
         bindings = <&kp LC(LA(P))>;
         key-positions = <25 26>;
-        layers = <0 1 2 3>;
+        layers = <0 1 2>;
     };
     circumflex {
         bindings = <&kp LS(N6)>;
         key-positions = <5 6>;
-        layers = <0 1 2 3>;
+        layers = <0 1 2>;
     };
 
     fullscrenRight {
         bindings = <&kp F11>;
         key-positions = <6 15>;
-        layers = <0 1 2 3>;
+        layers = <0 1 2>;
     };
     fullscreenLeft {
         bindings = <&kp F11>;
         key-positions = <3 14>;
-        layers = <0 1 2 3>;
+        layers = <0 1 2>;
         };
     };
 
