@@ -22,27 +22,55 @@
     timeout-ms = <20>;
     require-prior-idle-ms = <250>;
 
-   
-    combo_normal {
-      key-positions = <6 7 8>;
-      bindings = <&to BASE>;
+    bootloaderRight {
+        bindings = <&bootloader>;
+        key-positions = <9 18 27>;
     };
-    Delete {
-      bindings = <&kp DELETE>;
-      key-positions = <8 9>;
+    bootloaderLeft {
+        bindings = <&bootloader>;
+        key-positions = <0 11 22>;
+    };
+
+    combo_normal {
+        key-positions = <6 7 8>;
+        bindings = <&to BASE>;
     };
     combo_normalleft {
-      key-positions = <1 2 3>;
-      bindings = <&to BASE>;
+        key-positions = <1 2 3>;
+        bindings = <&to BASE>;
+    };
+    game {
+        bindings = <&tog 1>;
+        key-positions = <18 29>;
+    };
+    gameleft {
+        bindings = <&tog 1>;
+        key-positions = <0 24>;
     };
     combo_fn {
-      key-positions = <27 28>;
-      bindings = <&sl FN>;
+        key-positions = <27 28>;
+        bindings = <&sl FN>;
+    }
+    GoNav {
+        bindings = <&tog 4>;
+        key-positions = <5 16>;
     };
-    combo_unlock {
-      key-positions = <0 4>;
-      bindings = <&studio_unlock>;
+
+    GoNumDot {
+        bindings = <&tog PPN>;
+        key-positions = <1 2 4>;
     };
+
+    Delete {
+        bindings = <&kp DELETE>;
+        key-positions = <8 9>;
+    };
+    Delete2 {
+        bindings = <&kp DELETE>;
+        key-positions = <7 8>;
+    };
+
+
     screenshot {
         bindings = <&kp LG(LS(S))>;
         key-positions = <3 4>;
@@ -52,7 +80,6 @@
         bindings = <&kp F16>;
         key-positions = <13 14>;
     };
-
     rus {
         bindings = <&kp F17>;
         key-positions = <15 16>;
@@ -62,49 +89,23 @@
         bindings = <&kp LS(N9)>;
         key-positions = <23 24>;
     };
-
-        greatt {
-            bindings = <&kp LC(LA(P))>;
-            key-positions = <25 26>;
-        };
-
-        circumflex {
-            bindings = <&kp LS(N6)>;
-            key-positions = <5 6>;
-        };
-
-    bootloaderRight {
-        bindings = <&bootloader>;
-        key-positions = <9 18 27>;
+    greatt {
+        bindings = <&kp LC(LA(P))>;
+        key-positions = <25 26>;
+    };
+    circumflex {
+        bindings = <&kp LS(N6)>;
+        key-positions = <5 6>;
     };
 
-    bootloaderLeft {
-        bindings = <&bootloader>;
-        key-positions = <0 11 22>;
-    };
+   
 
-    game {
-        bindings = <&tog 1>;
-        key-positions = <18 29>;
-    };
+
         
-    gameleft {
-        bindings = <&tog 1>;
-        key-positions = <0 24>;
-    };
-    GoNav {
-        bindings = <&tog 4>;
-        key-positions = <5 16>;
-    };
-    GoScroll {
-        bindings = <&tog 8>;
-        key-positions = <16 25>;
-    };
-    GoNumDot {
-        bindings = <&tog PPN>;
-        key-positions = <1 2 4>;
-    };
-    fullscree {
+
+
+
+    fullscrenRight {
         bindings = <&kp F11>;
         key-positions = <6 15>;
     };
@@ -145,7 +146,7 @@
             // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ 0 ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                     &kp A         &kp S         &kp D         &kp F         &kp G             &kp H         &kp J         &kp K         &kp L        &kp SEMI
             // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤Bse├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                   &kp NUBS       &kp Z         &kp X         &kp C         &kp V             &kp N         &kp M       &kp COMMA     &lt 8 DOT      &kp FSLH
+                   &kp NUBS       &kp Z         &kp X         &kp C         &kp V             &kp N         &kp M       &kp COMMA      &kp DOT       &kp FSLH
             // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤ 0 ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
                                               &kp LSHFT      &kp BSPC     &kp LCTRL         &lt 6 RET   &lt NAV SPACE   &lt 5 ESC  
             //                             ╰─────────────┴─────────────┴─────────────╯Bse╰─────────────┴─────────────┴─────────────╯
@@ -170,15 +171,15 @@
         FN {
             display-name = "FN2";
             bindings = <
-            // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮F11╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+            // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮FN ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
                     &kp F1        &kp F2        &kp F3        &kp F4        &kp F5         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2     &trans      &bt BT_CLR
             // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ 2 ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                     &kp F6        &kp F7        &kp F8        &kp F9       &kp F10          &kp PSCRN     &kp LCTRL     &kp LSHFT      &kp LALT       &trans
-            // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤F11├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+            // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤FN ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                     &trans        &trans        &trans       &kp F11       &kp F12            &trans        &trans        &trans        &trans     &bootloader      
             // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤ 2 ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
                                                 &trans        &trans        &trans            &trans        &trans        &trans
-            //                             ╰─────────────┴─────────────┴─────────────╯F11╰─────────────┴─────────────┴─────────────╯
+            //                             ╰─────────────┴─────────────┴─────────────╯FN ╰─────────────┴─────────────┴─────────────╯
             >;
         };
 
@@ -216,7 +217,7 @@
             display-name = "FN_5";
             bindings = <
             // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮F12╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-                  &bt BT_CLR      &trans     &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0           &kp F10        &kp F7        &kp F8        &kp F9        &trans
+                  &bt BT_CLR      &trans     &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0        &kp F10        &kp F7        &kp F8        &kp F9        &trans
             // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ 5 ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                    &kp LWIN     &kp LALT      &kp LSHFT     &kp LCTRL     &kp PSCRN          &kp F11        &kp F4        &kp F5        &kp F6        &trans
             // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤F12├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
@@ -231,13 +232,13 @@
             display-name = "Dot_6";
             bindings = <
             // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮PPN╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-                  &kp EQUAL       &kp N9        &kp N8        &kp N7       &kp LBKT         &kp LS(N1)    &kp LS(N2)    &kp LS(N9)    &kp LS(N0)    &kp LS(N3)
+                  &kp EQUAL       &kp F7        &kp F8        &kp F9       &kp F10          &kp LS(N1)    &kp LS(N2)    &kp LS(N9)    &kp LS(N0)    &kp LS(N3)
             // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ 6 ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                 &kp KP_MINUS     &kp N4        &kp N5        &kp N6     &kp KP_PLUS        &kp GRAVE      &kp RBKT      &kp LBKT    &kp LS(N7) &kp LA(LC(MINUS))
+                 &kp KP_MINUS     &kp F4        &kp F5        &kp F6       &kp F11          &kp GRAVE      &kp RBKT      &kp LBKT    &kp LS(N7) &kp LA(LC(MINUS))
             // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤PPN├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                 &kp KP_SLASH     &kp N1        &kp N2        &kp N3   &kp KP_MULTIPLY    &kp LS(GRAVE)  &kp LS(RBKT)  &kp LS(LBKT) &kp LA(LC(DOT)) &kp KP_SLASH
+                 &kp KP_SLASH     &kp F1        &kp F2        &kp F3       &kp F12        &kp LS(GRAVE)  &kp LS(RBKT) &kp LS(LBKT) &kp LA(LC(DOT)) &kp KP_SLASH
             // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤ 6 ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
-                                              &kp SPACE     &kp BSPC       &kp N0             &trans        &trans        &trans
+                                              &kp LSHFT      &kp LALT     &kp LCTRL           &trans        &trans        &trans
             //                             ╰─────────────┴─────────────┴─────────────╯PPN╰─────────────┴─────────────┴─────────────╯
             >;
         };
