@@ -96,7 +96,7 @@
     ParaLeft {
         bindings = <&kp LS(N9)>;
         key-positions = <23 24>;
-        layers = 0 1 2 3>;
+        layers = <0 1 2 3>;
     };
     greatt {
         bindings = <&kp LC(LA(P))>;
