@@ -50,7 +50,7 @@
     combo_fn {
         key-positions = <27 28>;
         bindings = <&sl FN>;
-    }
+    };
     GoNav {
         bindings = <&tog 4>;
         key-positions = <5 16>;
