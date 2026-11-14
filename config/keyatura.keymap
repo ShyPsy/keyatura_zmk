@@ -37,11 +37,12 @@
     combo_normal {
         key-positions = <6 7 8>;
         bindings = <&to BASE>;
+        layers = <0 1 2 3>;
     };
     combo_normalleft {
         key-positions = <1 2 3>;
         bindings = <&to BASE>;
-        layers = <0 1 2>;
+        layers = <0 1 2 3>;
     };
     game {
         bindings = <&tog GAME>;
@@ -59,10 +60,12 @@
     GoNav {
         bindings = <&tog NAV>;
         key-positions = <5 16>;
+        layers = <0 1 2>;
     };
     GoPPN {
         bindings = <&tog PPN>;
         key-positions = <0 1 2>;
+        layers = <0 1 2>;
     };
 
     Delete {
@@ -160,7 +163,8 @@
         };
 
         Navigation {
-            display-name = "NavNam_2";
+            display-name = "NavNam_2
+                                                                                      ;
             bindings = <
             // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮Nav╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
                   &kp EQUAL       &kp N7        &kp N8        &kp N9       &kp RBKT          &kp ESC      &kp PG_UP       &kp UP      &kp PG_DN      &kp F11
@@ -208,9 +212,9 @@
             display-name = "Game_1";
             bindings = <
             // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮Gam╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-                   &kp ESC        &kp Q         &kp W         &kp E         &kp R             &kp N1        &kp N2        &kp N3        &kp N4        &kp N5
+                   &kp ESC        &kp Q         &kp W         &kp E         &kp R             &kp N1        &kp N2        &kp UP        &kp N4        &kp N5
             // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ 4 ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                  &kp LSHFT       &kp A         &kp S         &kp D         &kp F             &kp G         &kp H         &kp J         &kp K         &kp L
+                  &kp LSHFT       &kp A         &kp S         &kp D         &kp F             &kp G       &kp LEFT      &kp DOWN      &kp RIGHT       &kp L
             // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤Gam├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                   &kp LCTRL       &kp Z         &kp X         &kp C         &kp V             &kp N         &kp M       &kp COMMA      &kp DOT       &kp FSLH
             // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┤ 4 ├─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
