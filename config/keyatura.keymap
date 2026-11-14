@@ -44,11 +44,11 @@
         bindings = <&to BASE>;
         layers = <0 1 2 3>;
     };
-    game {
-        bindings = <&tog GAME>;
-        key-positions = <18 29>;
-    };
     gameleft {
+        bindings = <&tog GAME>;
+        key-positions = <0 24>;
+    };
+    gameright {
         bindings = <&tog GAME>;
         key-positions = <9 25>;
     };
