@@ -50,7 +50,7 @@
     };
     gameleft {
         bindings = <&tog GAME>;
-        key-positions = <0 24>;
+        key-positions = <9 25>;
     };
     combo_SRV {
         key-positions = <27 28>;
